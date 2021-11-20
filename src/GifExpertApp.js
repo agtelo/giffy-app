@@ -7,9 +7,12 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <h2>GifExpertApp</h2>
+      <div className="gif-logo">
+        <h2>GifExpertApp</h2>
+      </div>
+
       <AddCategory setCategories={setCategories} />
-      <hr />
+      <hr className="colored" />
 
       <ol>
         {categories.map((category) => (

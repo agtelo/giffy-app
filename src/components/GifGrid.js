@@ -7,30 +7,19 @@ export const GifGrid = ({ category }) => {
 
   return (
     <>
+      <br />
       {loading && (
         <div className="d-flex justify-content-center">
-          <div className="spinner-grow text-primary" role="status">
+          <div className="spinner-border text-secondary " role="status">
             <span className="visually-hidden">Loading...</span>
-          </div>
-          <div class="spinner-grow text-secondary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <div class="spinner-grow text-success" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <div class="spinner-grow text-danger" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <div class="spinner-grow text-warning" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <div class="spinner-grow text-info" role="status">
-            <span class="visually-hidden">Loading...</span>
           </div>
         </div>
       )}
-
-      <h3 className="animate__animated animate__fadeIn"> {category} </h3>
+      <br />
+      <h3 className="animate__animated animate__fadeIn animate__delay-1s">
+        {" "}
+        {category}{" "}
+      </h3>
 
       <div className="card-grid">
         {images.map((img) => (
